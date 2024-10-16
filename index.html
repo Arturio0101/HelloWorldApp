@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Информация о станции Deutsche Bahn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #station-info {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none; /* Скрываем блок до получения данных */
+        }
+        #error-message {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p id="message">This is a simple application.</p>
+
+    <h1>Получение информации о станции Deutsche Bahn</h1>
+    <label for="station-number">Введите номер станции:</label>
+    <input type="number" id="station-number" min="1" required>
+    <button id="fetch-button">Получить информацию</button>
+
+    <div id="station-info"></div>
+    <div id="error-message"></div>
 
     <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,14 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    margin-top: 50px;
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}
+            font-family: Arial, sans-serif;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        #trainList {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        #trainList li {
+            padding: 5px;
+            background-color: #f8d7da;
+            margin-bottom: 5px;
+            border: 1px solid #f5c6cb;
+        }
+        .autocomplete-suggestions {
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+            background-color: #fff;
+            position: absolute;
+            z-index: 9999;
+        }
+        .autocomplete-suggestion {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .autocomplete-suggestion:hover {
+            background-color: #ddd;
+        }
